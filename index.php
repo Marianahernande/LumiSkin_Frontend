@@ -8,7 +8,8 @@
     <!-- Fuente elegante -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./assets/style/estilos.css">
+
 </head>
 <body>
     <header>

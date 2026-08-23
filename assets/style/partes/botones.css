@@ -1,0 +1,151 @@
+
+/* Botón Iniciar sesión*/
+.header-btn1 {
+    border: 1.5px solid var(--btn-rosa-main);
+    color: var(--btn-rosa-main);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 12px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.header-btn1:hover {
+    border-color: var(--btn-rosa-main);
+    color: var(--btn-rosa-main);
+    transform: translateY(-2px);
+}
+
+.header-btn1:active {
+    transform: translateY(0);
+}
+
+/* Botón Registrarse */
+.header-btn {
+    background-color: var(--btn-rosa-main);
+    border: 1.5px solid var(--btn-rosa-main);
+    color: var(--btn-texto-blanco);
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 12px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.header-btn:hover {
+    border-color: var(--btn-rosa-hover);
+    color: var(--btn-texto-blanco);
+    transform: translateY(-2px);
+}
+
+.header-btn:active {
+    transform: translateY(0);
+}
+
+/* Boton reserva Lado Derecho: Precio y Botón */
+.card-servicio-catalogo .accion-servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.card-servicio-catalogo .precio-servicio {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var( --Azul-oscuro);
+}
+
+.card-servicio-catalogo .btn-reservar {
+    background-color: var(--btn-rosa-main);
+    color: var(--blanco);
+    padding: 8px 22px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.card-servicio-catalogo .btn-reservar:hover {
+    background-color: var(--btn-rosa-hover);
+    transform: scale(1.02);
+}
+
+/*Botones del Hero*/
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 1.4s forwards;
+    flex-wrap: wrap;
+}
+
+.btn-hero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 40px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 2px solid transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--Rosa-magenta), var(--Med-purpura));
+    color: white;
+    box-shadow: 0 8px 25px rgba(237, 102, 178, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(237, 102, 178, 0.6);
+    letter-spacing: 1px;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--Azul-oscuro);
+    border: 2px solid var(--Azul-oscuro);
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background: var(--Azul-oscuro);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(40, 37, 90, 0.2);
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.btn-hero:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+/*Boton Enviar Formularios/registrarse/loguearse*/
+
+

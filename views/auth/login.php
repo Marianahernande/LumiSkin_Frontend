@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesion</title>
-    <link rel="stylesheet" href="/auth/styles/estilos_login.css">
+    <link rel="stylesheet" href="../../assets/style/sessionForms/estilos_login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <header>
         <div style="display: flex;align-items: cent er;">
             <div class="circulo">
-                <img src="/img/logo.png" alt="Belleza">
+                <img src="../../assets/img/logo.png" alt="Belleza">
                 
             </div>
              <p style="font-family: Imperial Script, cursive; font-size: 40px; font-weight: 600;">Dahlia Beauté</p>
@@ -38,7 +38,7 @@
         <div id="contenedor_info">
 
             <div id="circulo">
-                <img src="/img/logo.png " alt="">
+                <img src="../../assets/img/logo.png" alt="">
             </div>
             
 

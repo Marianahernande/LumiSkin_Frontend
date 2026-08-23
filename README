@@ -1,0 +1,64 @@
+# Dahlia Beauté
+
+ 🌟 LumiSkin (Dalia Beauté)
+
+Sistema web desarrollado para la gestión integral de servicios, control de citas y paneles de administración, enfocado en ofrecer una experiencia fluida tanto para los clientes como para el personal administrativo bajo un patrón de arquitectura **MVC (Modelo-Vista-Controlador)**.
+
+---
+
+## 📂 Estructura del Proyecto
+
+El proyecto está organizado separando la capa visual, la lógica de negocio y el acceso a datos:
+
+```text
+LumiSkin/
+├── assets/                  # Recursos estáticos globales
+│   ├── img/                 # Imágenes y logotipos
+│   ├── js/                  # Scripts de JavaScript
+│   └── style/               # Hojas de estilo CSS
+│
+├── backend/                 # Capa de Lógica y Datos (Controladores, Modelos y Config)
+│   ├── auth/                # Control de acceso y validación de sesiones
+│   ├── config/              # Archivos de configuración y conexión a base de datos
+│   ├── controllers/         # Lógica de control y gestión de peticiones
+│   └── models/              # Acceso a datos y consultas SQL
+│
+├── views/                   # Capa Visual (Interfaces de usuario)
+│   ├── admin/               # Panel de control y gestión para administradores
+│   ├── auth/                # Vistas de inicio de sesión y registro
+│   ├── cliente/             # Panel de usuario/cliente final
+│   └── partes/              # Componentes modulares reutilizables (Header, Footer, etc.)
+│
+├── index.php                # Front Controller (Punto de entrada único)
+└── README.md                # Documentación del proyecto
+```
+
+---
+
+## 🚀 Características Principales
+
+* **Arquitectura MVC:** Separación clara entre las vistas (`views/`), los controladores y modelos (`backend/`) para un mantenimiento limpio y escalable.
+* **Control de Acceso:** Módulos independientes de inicio de sesión y registro de usuarios con redireccionamiento por roles.
+* **Paneles Diferenciados:** Vistas exclusivas y protegidas para clientes y administradores.
+* **Componentes Modulares:** Uso de plantillas parciales (`views/partes/`) para optimizar el código HTML y evitar duplicidades.
+* **Gestión Centralizada:** Punto de entrada único (`index.php`) mediante un Front Controller.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **HTML5 & CSS3** para el diseño de interfaces y maquetación.
+* **JavaScript** para la interactividad.
+* **PHP** para la lógica del servidor bajo un esquema MVC.
+* **MySQL** para la gestión de la base de datos relacional.
+
+---
+
+## 👥 Equipo de Desarrollo
+Proyecto desarrollado en colaboración para la gestión académica y funcional del sistema **Dalia Beauté / LumiSkin**.
+
+* Jaider Stiv Wilches Cuevas
+* Jessika Mariana Hernandez Chamucero
+* Juan Jose Alfonso Fajardo
+* Daniel Alejandro Navarro Suarez
+* Angie Lorena Arias Vasquez

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar contraseña</title>
-    <link rel="stylesheet" href="/auth/styles/estilos_recuperar.css">
+    <link rel="stylesheet" href="../../assets/style/sessionForms/estilos_recuperar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
@@ -13,20 +13,20 @@
     <header>
         <div style="display: flex;align-items: cent er;">
             <div class="circulo">
-                <img src="/img/logo.png" alt="Belleza">
+                <img src="../../assets/img/logo.png" alt="Belleza">
                 
             </div>
              <p style="font-family: Imperial Script, cursive; font-size: 40px; font-weight: 600;">Dahlia Beauté</p>
         </div>
         <nav>
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="../../index.php">Inicio</a></li>
 
             </ul>
         </nav>
         <div>
             <a href="#" class="header-btn">Iniciar sesion</a>
-            <a href="/auth/registrarse.html" class="header-btn1">Registrarse</a>
+            <a href="./registrarse.html" class="header-btn1">Registrarse</a>
         </div>
         
     </header>
@@ -34,14 +34,10 @@
 
 
     <div id="main_container">
-        
-
-        
-
 
         <div id="contenedor_login">
             <div id="circulo">
-                <img src="/img/logo.png " alt="">
+                <img src="../../assets/img/logo.png " alt="">
             </div>
             <p style="font-size: 45px;font-weight: 700; margin-bottom: 30px;">
                 Recuperar Contraseña
