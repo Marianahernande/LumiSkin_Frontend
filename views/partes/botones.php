@@ -3,8 +3,8 @@
 function renderBotonesHeader() {
 ?>
     <div class="grupo-botones">
-        <a href="./views/auth/login.php" class="header-btn1">Iniciar sesión</a>
-        <a href="./views/auth/registrarse.php" class="header-btn">Registrarse</a>
+        <a href="/LumiSkin/views/auth/login.php" class="header-btn1">Iniciar sesión</a>
+        <a href="/LumiSkin/views/auth/registrarse.php" class="header-btn">Registrarse</a>
     </div>
 <?php
 }
@@ -30,7 +30,7 @@ function renderBotonesHero() {
                 <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
         </a>
-        <a href="#catalogo" class="btn-hero btn-secondary">
+        <a href="../auth/login.php" class="btn-hero btn-secondary">
             Ver servicios →
         </a>
     </div>

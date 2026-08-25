@@ -1,5 +1,4 @@
 @import url('https://googleapis.com');
-/* Subes un nivel de carpeta para acceder a variables del color */
 @import url('../colores.css');
 
 * {

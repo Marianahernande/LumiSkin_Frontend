@@ -6,7 +6,7 @@ require_once __DIR__ . '/botones.php';
     <header>
         <div style="display: flex;align-items: center;">
             <div class="circulo">
-                <img src="./assets/img/logo.png" alt=" Logo D"> 
+                <img src="/LumiSkin/assets/img/logo.png" alt="Logo D"> 
             </div>
              <p class="titulo">ahlia Beauté</p>
         </div>
@@ -20,9 +20,9 @@ require_once __DIR__ . '/botones.php';
 
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#catalogo">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                 <li><a href="/LumiSkin/index2.php">Inicio</a></li>
+                 <li><a href="/LumiSkin/index2.php#catalogo">Servicios</a></li>
+                 <li><a href="/LumiSkin/index2.php#contacto">Contacto</a></li>
             </ul>
         </nav>
         

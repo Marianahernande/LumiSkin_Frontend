@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+@import url(../colores.css);
+#contenedor_info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: 
+        linear-gradient(rgba(193, 136, 207, 0.82), rgba(134, 70, 156, 0.85)), 
+        url('../../img/servicios/hidratacion\ con\ Colageno.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    padding: 0 40px;
+}
+
+#circulo {
+    width: 160px;
+    height: 160px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(241, 241, 241, 0.08);
+    flex-shrink: 0;
+}
+
+#circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenedor de texto ajustado con la animación y espaciado*/
+#texto_login {
+    width: 100%;
+    max-width: 450px;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0;
+    gap: 20px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* <p>: Aplica la fuente */
+#texto_login p:nth-child(1) {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    line-height: 1.3;
+    color: var(--Azul-oscuro);
+     text-shadow: 0 2px 1px rgb(226, 226, 233);
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* 2do <p> */
+#texto_login p:nth-child(2) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    color: #ffffff; /* Color blanco puro */
+    text-shadow: 0 2px 4px rgba(40, 37, 90, 0.25); /* Sombra suave con tinte oscuro para darle contraste */
+    max-width: 400px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.texto{
+    color: var( --Rosa-magenta);
+    font-weight: 800px;
+    text-shadow: 0 1px 0px rgb(12, 12, 12);
+}
+/* Animación idéntica al hero.css */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

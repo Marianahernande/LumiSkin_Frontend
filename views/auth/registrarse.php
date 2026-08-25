@@ -4,34 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <link rel="stylesheet" href="../../assets/style/sessionForms/estilos_registrar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="../../assets/style/partes/headerPrincipal.css">
+<link rel="stylesheet" href="../../assets/style/partes/botones.css">
+
+<link rel="stylesheet" href="../../assets/style/sessionForms/lateral.css">
+<link rel="stylesheet" href="../../assets/style/sessionForms/forms.css">
+<link rel="stylesheet" href="../../assets/style/partes/botones.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div style="display: flex;align-items: center;">
-            <div class="circulo">
-                <img src="/img/logo.png" alt="Belleza">
-                
-            </div>
-             <p style="font-family: Imperial Script, cursive; font-size: 40px; font-weight: 600;">Dahlia Beauté</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-  
-            </ul>
-        </nav>
-        <div>
-            <a href="/auth/login.html" class="header-btn1">Iniciar sesion</a>
-            <a href="#" class="header-btn">Registrarse</a>
-        </div>
-        
-    </header>
+    <?php include '../partes/headerPrincipal.php'; ?>
 <main>
-
 
     <div id="main_container">
 
@@ -40,7 +25,7 @@
             
             <form action="">
                 <Div>
-                    <p style="font-size: 50px;font-weight: 700">
+                    <p style="font-size:50px; font-weight:700">
                         Crear Cuenta
                     </p>
                     <p>Registrate para reseravar tus citas</p>
@@ -59,7 +44,7 @@
                 </div>
 
                 <button type="submit">Crear cuenta</button>
-                <p style="align-self: center;">¿Ya tienes cuenta? <a href="/auth/login.html">iniciar sesion</a></p>
+                <p style="align-self: center;">¿Ya tienes cuenta? <a href="/views/auth/login.php">iniciar sesion</a></p>
             </form>
 
         </div>
@@ -67,21 +52,18 @@
         <div id="contenedor_info">
 
             <div id="circulo">
-                <img src="/img/logo.png" alt="">
+                <img src="../../assets/img/icono/log3.png" alt="">
             </div>
             
 
             <div id="texto_login">
 
-                <p style="font-family: Imperial Script, cursive; font-size: 40px; font-weight: 600;">Dahlia Beauté</p>
-
-                    
-
-                <p style="color: #ED66B2; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic ; font-weight: 600; font-size: 30px;">
-                    "Belleza que se cuida, <br> confianza que se nota"
+                <p>Dahlia Beauté</p>
+                <p>
+                    "Belleza que se cuida, confianza que se nota"
                 </p>
 
-                <p style="margin-top: 40px; font-size: 20px;">Crea tu cuenta y reserva tu primer <br> tratamiento en minutos</p>
+                <p class="texto">Crea tu cuenta y reserva tu primer tratamiento en minutos</p>
                 
             </div>
 

@@ -1,27 +1,23 @@
 :root {
-    --Med-purpura: #86469C;   /* Púrpura medio */
-    --Lila: #C188CF;          /* Lila */
-    --Rosa-claro: #FFCDEA;    /* Rosa claro */
-    --Rosa-magenta: #ED66B2;  /* Rosa magenta */
+    /* --- Colores Generales y de Marca --- */
+    --Med-purpura: #86469C;       /* Púrpura medio */
+    --Lila: #C188CF;              /* Lila */
+    --Lil: #e6cbf5;               /* Tono lila extra */
+    --Rosa-claro: #FFCDEA;        /* Rosa claro */
+    --Rosa-magenta: #ED66B2;      /* Rosa magenta */
+    --Rosa-magenta2: #d14dbd;     /* Rosa magenta secundario */
     --Azul-oscuro: #28255A;
-    --logo-color: #721C47;   /* Azul oscuro */
+    --logo-color: #721C47;        /* Color del logotipo */
     --background: #f6eff7;
     --blanco: #ffffff;
     --texto-gris: #555555;
     --borde-sutil: #e8d9f0;
-}
 
-/*Colores Botones Inicio de Sesion y Registrase*/
-
-:root {
-    /* Variables de botones  registars*/
-    --btn-rosa-main: #ED66B2;          /* Color magenta principal */
-    --btn-rosa-hover: #c83a8a;         /* Tono oscuro para hover principal */
+    /* --- Variables de Botones (Inicio de Sesión y Registro) --- */
+    --btn-rosa-main: #ED66B2;             /* Color magenta principal */
+    --btn-rosa-hover: #c83a8a;            /* Tono oscuro para hover principal */
     --btn-rosa-soft-hover: rgba(237, 102, 178, 0.12); /* Fondo suave en hover secundario */
-    --btn-shadow-rosa: rgba(237, 102, 178, 0.25);      /* Sombra en reposo */
+    --btn-shadow-rosa: rgba(237, 102, 178, 0.25);     /* Sombra en reposo */
     --btn-shadow-rosa-hover: rgba(200, 58, 138, 0.4); /* Sombra en hover */
     --btn-texto-blanco: #ffffff;
 }
-
-
-

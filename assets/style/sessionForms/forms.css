@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+@import url(../colores.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--Azul-oscuro);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Ajustado para compensar el espacio del header importado sin desbordar */
+main {
+    width: 100vw;
+    height: calc(100vh - 75px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+#main_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--Rosa-claro);
+    overflow: hidden;
+}
+
+#contenedor_login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    box-shadow: 10px 0 30px rgba(134, 70, 156, 0.03); /* Sombra muy sutil de separación */
+    z-index: 2;
+}
+
+form {
+    width: 75%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    color: var(--Azul-oscuro);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+form input {
+    width: 100%;
+    height: 52px;
+    padding: 0 18px;
+    border: 1.5px solid rgba(134, 70, 156, 0.15);
+    border-radius: 14px;
+    background-color: #faf8fb; /* Fondo ligeramente tintado muy suave */
+    color: var(--Azul-oscuro);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form input::placeholder {
+    color: #b0a8b9;
+}
+
+form input:focus {
+    border-color: var(--Rosa-magenta);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(237, 102, 178, 0.12);
+}
+
+/* Enlace de contraseña */
+form a {
+    color: var(--Med-purpura);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    align-self: center;
+    transition: all 0.2s ease;
+    margin-top: -4px;
+}
+
+form a:hover {
+    color: var(--Rosa-magenta);
+    text-decoration: underline;
+}
+
+.texto{
+    color: var( --Rosa-magenta);
+    font-weight: 800px;
+    text-shadow: 0 1px 0px rgb(12, 12, 12);
+}
+
+h2 {
+    margin-bottom: 32px;
+    align-self: flex-start;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Azul-oscuro);
+    letter-spacing: -0.5px;
+}
