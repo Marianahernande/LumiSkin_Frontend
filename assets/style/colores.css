@@ -20,4 +20,16 @@
     --btn-shadow-rosa: rgba(237, 102, 178, 0.25);     /* Sombra en reposo */
     --btn-shadow-rosa-hover: rgba(200, 58, 138, 0.4); /* Sombra en hover */
     --btn-texto-blanco: #ffffff;
+
+    /* --- Estados de Reserva Disponibilidad --- */
+    --estado-disponible: #4CAF50;   /* Verde */
+    --estado-ocupado: #E5484D;      /* Rojo */
+    --estado-espera: #F5A623;       /* Ámbar */
+
+    /* --- Focos para Inputs --- */
+    --input-focus-cliente: #ED66B2; /* Rosa magenta */
+    --input-focus-admin: #86469C;   /* Púrpura medio */
+
+    /* --- Borde sutil de Inputs (Azul oscuro al 10% de opacidad) --- */
+    --input-borde-base: rgba(40, 37, 90, 0.10);
 }

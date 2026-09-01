@@ -20,9 +20,9 @@ require_once __DIR__ . '/botones.php';
 
         <nav>
             <ul>
-                 <li><a href="/LumiSkin/index2.php">Inicio</a></li>
-                 <li><a href="/LumiSkin/index2.php#catalogo">Servicios</a></li>
-                 <li><a href="/LumiSkin/index2.php#contacto">Contacto</a></li>
+                 <li><a href="/LumiSkin/index.php">Inicio</a></li>
+                 <li><a href="/LumiSkin/index.php#catalogo">Servicios</a></li>
+                 <li><a href="/LumiSkin/index.php#contacto">Contacto</a></li>
             </ul>
         </nav>
         

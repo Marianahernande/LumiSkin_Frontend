@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionar reservas — Dahlia Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">D</div>
+        <span class="sidebar__brand-name">Dahlia · Admin</span>
+      </div>
+      <nav class="sidebar__nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="reservas.html" class="nav-link nav-link--active">
+          <span class="nav-link__dot"></span> Gestionar reservas
+        </a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="auditoria.html" class="nav-link">Auditoría</a>
+        <a href="perfil.html" class="nav-link">Mi perfil</a>
+      </nav>
+      <div class="sidebar__footer">
+        <a href="#" class="sidebar__logout">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="page-header">
+        <h1 class="page-title">Gestionar reservas</h1>
+      </header>
+
+      <div class="table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Servicio</th>
+                <th>Fecha / Hora</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Valentina Ríos</td>
+                <td>Limpieza Facial Profunda</td>
+                <td>10 ago 2026 · 09:00–10:00</td>
+                <td>
+                  <select class="status-select status-select--pendiente">
+                    <option selected>Pendiente</option>
+                    <option>En proceso</option>
+                    <option>Finalizado</option>
+                    <option>Cancelado</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Camila Herrera</td>
+                <td>Masaje Relajante Corporal</td>
+                <td>10 ago 2026 · 10:30–11:30</td>
+                <td>
+                  <select class="status-select status-select--en-proceso">
+                    <option>Pendiente</option>
+                    <option selected>En proceso</option>
+                    <option>Finalizado</option>
+                    <option>Cancelado</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Sofía Delgado</td>
+                <td>Manicura Spa</td>
+                <td>10 ago 2026 · 11:00–11:40</td>
+                <td>
+                  <select class="status-select status-select--pendiente">
+                    <option selected>Pendiente</option>
+                    <option>En proceso</option>
+                    <option>Finalizado</option>
+                    <option>Cancelado</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Renata Ibáñez</td>
+                <td>Pedicura Spa</td>
+                <td>10 ago 2026 · 13:00–13:50</td>
+                <td>
+                  <select class="status-select status-select--finalizado">
+                    <option>Pendiente</option>
+                    <option>En proceso</option>
+                    <option selected>Finalizado</option>
+                    <option>Cancelado</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Fabiana Ortiz</td>
+                <td>Hidratación con Colágeno</td>
+                <td>9 ago 2026 · 16:00–16:45</td>
+                <td>
+                  <select class="status-select status-select--cancelado">
+                    <option>Pendiente</option>
+                    <option>En proceso</option>
+                    <option>Finalizado</option>
+                    <option selected>Cancelado</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Antonella Vega</td>
+                <td>Exfoliación Corporal</td>
+                <td>9 ago 2026 · 17:00–17:45</td>
+                <td>
+                  <select class="status-select status-select--finalizado">
+                    <option>Pendiente</option>
+                    <option>En proceso</option>
+                    <option selected>Finalizado</option>
+                    <option>Cancelado</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

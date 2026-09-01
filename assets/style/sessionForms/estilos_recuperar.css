@@ -1,11 +1,5 @@
-:root {
-    --Med-purpura: #86469C;
-    --Lila: #dbb1f4;
-    --Rosa-claro: #FFCDEA;
-    --Rosa-magenta: #d14dbd;
-    --Azul-oscuro: #28255A;
-    --background: #f6eff7;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+@import url(../colores.css);
 
 * {
     box-sizing: border-box;
@@ -14,152 +8,102 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: var(--background);
-}
-
-
-
-header {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    padding: 18px 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    backdrop-filter: blur(10px);
-}
-
-nav ul {
-    display: flex;
-    gap: 35px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
     color: var(--Azul-oscuro);
-    font-weight: 500;
-    font-size: 18px;
-    transition: color 0.3s ease;
-    position: relative;
-}
-
-nav a:hover {
-    color: var(--Med-purpura);
-}
-
-/* Efecto underline al hover */
-nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: var(--Med-purpura);
-    transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-.header-btn1 {
-    border: solid 1.5px #ED66B2;
-    color:var(--Rosa-magenta);
-    text-decoration: none;
-    padding: 10px 24px;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: background 0.3s ease;
-}
-
-.header-btn {
-    background-color: var(--Rosa-magenta);
-    color: white;
-    text-decoration: none;
-    padding: 10px 24px;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: background 0.3s ease;
-}
-
-.header-btn:hover {
-    background-color: #c83a8a;
-}
-
-.header-btn1:hover {
-    background-color: #c83a8a56;
-    color: #fff;
-}
-.circulo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;    
-    display: flex;
     
+  
+}
+
+/* Ajustado para compensar el espacio del header importado sin desbordar */
+main {
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--background);
+    overflow: hidden;
 }
 
-.circulo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* Contenedor centrado para la vista de recuperar contraseña (sin panel lateral) */
 #main_container {
     width: 100%;
-    height: 90vh;
-    margin-top: 10vh;
-    display: flex;
-    background-color: var(--Rosa-claro);
-    overflow: hidden;
-}
-
-
-#circulo {
-    width: 180px;
-    height: 180px;
-    margin-top: 100px;
-    overflow: hidden;
-    margin-bottom: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-#circulo img {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(233, 198, 245, 0.85), rgba(225, 180, 240, 0.85)), url(../../img/servicios/spa.webp);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 20px;
 }
-
 
 
 #contenedor_login {
     width: 100%;
-    height: 100%;
+    max-width: 520px;
+    height: auto;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    background-color: var(--background);
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(134, 70, 156, 0.08);
+    z-index: 2;
 }
 
+/* Círculo para el icono */
+#circulo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(134, 70, 156, 0.1);
+}
+
+#circulo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Títulos y textos descriptivos */
+.titulo-recuperar {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--Azul-oscuro);
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.texto-instrucciones {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: var(--Azul-oscuro);
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/* Estructura del formulario */
 form {
-    width: 65%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 440px;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 20px;
 }
 
 form div {
@@ -170,61 +114,50 @@ form div {
 
 form label {
     color: var(--Azul-oscuro);
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
 
 form input {
     width: 100%;
-    height: 50px;
-    padding: 0 16px;
-    border: solid 1px #0000002d;
-    border-radius: 12px;
-    background-color: white;
+    height: 52px;
+    padding: 0 18px;
+    border: 1.5px solid rgba(134, 70, 156, 0.15);
+    border-radius: 14px;
+    background-color: #faf8fb;
     color: var(--Azul-oscuro);
-    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
     outline: none;
-    transition: 0.2s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form input::placeholder {
+    color: #b0a8b9;
 }
 
 form input:focus {
-    border: 1px solid var(--Rosa-magenta);
-
-    border-color: var(--Med-purpura);
-    box-shadow: 0 0 0 3px var(--Rosa-claro);
+    border-color: var(--Rosa-magenta);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(237, 102, 178, 0.12);
 }
 
+/* Enlaces y redirecciones */
+.contenedor-enlace {
+    align-self: center;
+    margin-top: 5px;
+}
 
 form a {
-    color: var(--Lila);
-    font-size: 14px;
-    font-weight: bold;
+    color: var(--Med-purpura);
+    font-size: 13px;
+    font-weight: 500;
     text-decoration: none;
-    align-self: center;
-    transition: 0.2s;
+    transition: all 0.2s ease;
 }
 
 form a:hover {
     color: var(--Rosa-magenta);
+    text-decoration: underline;
 }
-
-/* Botón */
-form button {
-    width: 100%;
-    height: 50px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 12px;
-    background-color: var(--Rosa-magenta);
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-form button:hover {
-    background-color: var(--Med-purpura);
-    transform: translateY(-2px);
-}
-

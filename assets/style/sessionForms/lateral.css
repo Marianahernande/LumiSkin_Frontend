@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
 @import url(../colores.css);
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--Azul-oscuro);
+    -webkit-font-smoothing: antialiased;
+}
+
 #contenedor_info {
     width: 50%;
     height: 100%;
@@ -7,14 +15,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: 
-        linear-gradient(rgba(193, 136, 207, 0.82), rgba(134, 70, 156, 0.85)), 
+    background-image:
+        linear-gradient(rgba(193, 136, 207, 0.82), rgba(134, 70, 156, 0.85)),
         url('../../img/servicios/hidratacion\ con\ Colageno.jpg');
-    
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     padding: 0 40px;
 }
 
@@ -58,7 +66,7 @@
     font-size: 2.3rem;
     line-height: 1.3;
     color: var(--Azul-oscuro);
-     text-shadow: 0 2px 1px rgb(226, 226, 233);
+    text-shadow: 0 2px 1px rgb(226, 226, 233);
     font-weight: 700;
     font-style: italic;
 }
@@ -67,24 +75,28 @@
 #texto_login p:nth-child(2) {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.05rem;
-    color: #ffffff; /* Color blanco puro */
-    text-shadow: 0 2px 4px rgba(40, 37, 90, 0.25); /* Sombra suave con tinte oscuro para darle contraste */
+    color: #ffffff;
+    /* Color blanco puro */
+    text-shadow: 0 2px 4px rgba(40, 37, 90, 0.25);
+    /* Sombra suave con tinte oscuro para darle contraste */
     max-width: 400px;
     line-height: 1.7;
     font-weight: 500;
 }
 
-.texto{
-    color: var( --Rosa-magenta);
+.texto {
+    color: var(--Rosa-magenta);
     font-weight: 800px;
     text-shadow: 0 1px 0px rgb(12, 12, 12);
 }
+
 /* Animación idéntica al hero.css */
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

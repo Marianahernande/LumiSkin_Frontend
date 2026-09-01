@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de servicios — Dahlia Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">D</div>
+        <span class="sidebar__brand-name">Dahlia · Admin</span>
+      </div>
+      <nav class="sidebar__nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="reservas.html" class="nav-link">Gestionar reservas</a>
+        <a href="servicios.html" class="nav-link nav-link--active">
+          <span class="nav-link__dot"></span> Servicios
+        </a>
+        <a href="auditoria.html" class="nav-link">Auditoría</a>
+        <a href="perfil.html" class="nav-link">Mi perfil</a>
+      </nav>
+      <div class="sidebar__footer">
+        <a href="#" class="sidebar__logout">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="page-header">
+        <h1 class="page-title">Gestión de servicios</h1>
+        <button type="button" class="btn btn--primary">+ Nuevo servicio</button>
+      </header>
+
+      <div class="table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Duración</th>
+                <th>Precio</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Limpieza Facial Profunda</td>
+                <td>60 min</td>
+                <td>S/ 45</td>
+                <td><span class="badge badge--success">Activo</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn--outline btn--sm">Editar</button>
+                    <button type="button" class="btn btn--danger-outline btn--sm">Desactivar</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Hidratación con Colágeno</td>
+                <td>45 min</td>
+                <td>S/ 38</td>
+                <td><span class="badge badge--success">Activo</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn--outline btn--sm">Editar</button>
+                    <button type="button" class="btn btn--danger-outline btn--sm">Desactivar</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Masaje Relajante Corporal</td>
+                <td>60 min</td>
+                <td>S/ 50</td>
+                <td><span class="badge badge--success">Activo</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn--outline btn--sm">Editar</button>
+                    <button type="button" class="btn btn--danger-outline btn--sm">Desactivar</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Exfoliación Corporal</td>
+                <td>45 min</td>
+                <td>S/ 40</td>
+                <td><span class="badge badge--success">Activo</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn--outline btn--sm">Editar</button>
+                    <button type="button" class="btn btn--danger-outline btn--sm">Desactivar</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Manicura Spa</td>
+                <td>40 min</td>
+                <td>S/ 22</td>
+                <td><span class="badge badge--success">Activo</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn--outline btn--sm">Editar</button>
+                    <button type="button" class="btn btn--danger-outline btn--sm">Desactivar</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Pedicura Spa</td>
+                <td>50 min</td>
+                <td>S/ 28</td>
+                <td><span class="badge badge--success">Activo</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn--outline btn--sm">Editar</button>
+                    <button type="button" class="btn btn--danger-outline btn--sm">Desactivar</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

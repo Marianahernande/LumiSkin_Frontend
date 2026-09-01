@@ -10,7 +10,7 @@ function renderBotonesHeader() {
 }
 
 // Función para el botón del Catálogo reservar
-function renderBotonReservar($link = "./views/auth/login.php", $texto = "Reservar") {
+function renderBotonReservar($link = "/LumiSkin/views/auth/login.php", $texto = "Reservar") {
 ?>
     <a href="<?php echo htmlspecialchars($link); ?>" class="btn-reservar">
         <?php echo htmlspecialchars($texto); ?>
@@ -18,9 +18,7 @@ function renderBotonReservar($link = "./views/auth/login.php", $texto = "Reserva
 <?php
 }
 
-
-// funcion botones hero reservar cita y ver servicios
-
+// Función botones hero reservar cita y ver servicios
 function renderBotonesHero() {
     ?>
     <div class="hero-buttons">
@@ -30,7 +28,7 @@ function renderBotonesHero() {
                 <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
         </a>
-        <a href="../auth/login.php" class="btn-hero btn-secondary">
+        <a href="/LumiSkin/views/servicios.php" class="btn-hero btn-secondary">
             Ver servicios →
         </a>
     </div>

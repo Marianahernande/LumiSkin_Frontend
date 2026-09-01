@@ -38,28 +38,28 @@
         <div id="contenedor_login">
 
             
-            <form action="">
+            <form action="" method="post">
                 <Div>
-                    <p style="font-size: 50px;font-weight: 700">
+                    <p id class="titulo_formulario">
                         Iniciar sesion
                     </p>
-                    <p>Ingresa tus datos para continuar</p>
+                    <p class="texto-instrucciones" >Ingresa tus datos para continuar</p>
                 </Div>
 
                 <div>
-                    <input type="email" id="correo" required placeholder="Correo electronico">
+                    <input type="email" id="correo" name="" required placeholder="Correo electronico">
                 </div>
 
                 <div>
-                    <input type="password" id="contraseña" required placeholder="Contraseña">
+                    <input type="password" id="contraseña" name="" required placeholder="Contraseña">
                 </div>
 
-                <a href="/auth/recuperarContra.html">¿Olvidaste tu contraseña?</a>
+                <a href="./recuperarContra.php">¿Olvidaste tu contraseña?</a>
 
 
                 <button type="submit">Entrar</button>
 
-                <p style="align-self: center;">¿No tienes cuenta? <a href="/views/auth/registrarse.php">Registrarse</a></p>
+                <p style="align-self: center;">¿No tienes cuenta? <a href="./registrarse.php">Registrarse</a></p>
 
             </form>
 

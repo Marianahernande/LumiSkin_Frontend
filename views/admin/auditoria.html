@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auditoría — Dahlia Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">D</div>
+        <span class="sidebar__brand-name">Dahlia · Admin</span>
+      </div>
+      <nav class="sidebar__nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="reservas.html" class="nav-link">Gestionar reservas</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="auditoria.html" class="nav-link nav-link--active">
+          <span class="nav-link__dot"></span> Auditoría
+        </a>
+        <a href="perfil.html" class="nav-link">Mi perfil</a>
+      </nav>
+      <div class="sidebar__footer">
+        <a href="#" class="sidebar__logout">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="page-header">
+        <h1 class="page-title">Auditoría</h1>
+      </header>
+
+      <div class="table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Usuario</th>
+                <th>Acción</th>
+                <th>Detalle</th>
+                <th>Fecha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Admin María Torres</td>
+                <td>Cambió estado de reserva #101</td>
+                <td>Pendiente → En proceso</td>
+                <td>10 ago 2026, 09:14</td>
+              </tr>
+              <tr>
+                <td>Admin María Torres</td>
+                <td>Canceló reserva #105</td>
+                <td>Motivo: cliente no se presentó</td>
+                <td>09 ago 2026, 18:02</td>
+              </tr>
+              <tr>
+                <td>Admin Jorge Salas</td>
+                <td>Desactivó servicio</td>
+                <td>Depilación Facial</td>
+                <td>08 ago 2026, 14:37</td>
+              </tr>
+              <tr>
+                <td>Admin Jorge Salas</td>
+                <td>Creó servicio</td>
+                <td>Exfoliación Corporal — S/ 40</td>
+                <td>05 ago 2026, 10:20</td>
+              </tr>
+              <tr>
+                <td>Admin María Torres</td>
+                <td>Editó servicio</td>
+                <td>Manicura Spa: precio S/ 20 → S/ 22</td>
+                <td>03 ago 2026, 11:45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -24,3 +24,26 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('No se encontró el botón .hamburger-menu o la etiqueta <header>');
     }
 });
+
+//Cargando
+
+document.addEventListener("submit", function(e) {
+    const formulario = e.target;
+    
+    if (formulario && formulario.id === 'formulario') {
+        const boton = formulario.querySelector('.btn-enviar');
+        
+        if (boton && !boton.classList.contains('is-loading')) {
+            // 1. Detenemos el envío inmediato del formulario
+            e.preventDefault();
+            
+            // 2. Activamos la clase de carga para mostrar el spinner
+            boton.classList.add('is-loading');
+            
+            // 3. Esperamos 600 milisegundos (lo justo para que se vea el giro) y enviamos el formulario
+            setTimeout(function() {
+                formulario.submit();
+            }, 600);
+        }
+    }
+});

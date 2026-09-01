@@ -174,3 +174,50 @@ form button:hover {
 form button:active {
     transform: translateY(0);
 }
+
+
+/* --- Estados Globales de Cargando y Deshabilitado  --- */
+
+button:disabled,
+a.disabled,
+.header-btn:disabled,
+.header-btn1:disabled,
+.btn-reservar:disabled,
+.btn-hero:disabled,
+form button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Estado de carga con spinner integrado */
+.is-loading,
+[data-loading="true"] {
+    color: transparent;
+    pointer-events: none;
+    cursor: wait;
+    position: relative;
+}
+
+.is-loading::after,
+[data-loading="true"]::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -9px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-top-color: #FFFFFF;
+    border-radius: 50%;
+    animation: spinButton 0.6s linear infinite;
+}
+
+@keyframes spinButton {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

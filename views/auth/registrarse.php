@@ -25,10 +25,10 @@
             
             <form action="">
                 <Div>
-                    <p style="font-size:50px; font-weight:700">
+                    <p class="titulo_formulario">
                         Crear Cuenta
                     </p>
-                    <p>Registrate para reseravar tus citas</p>
+                    <p class="texto-instrucciones">Registrate para reseravar tus citas</p>
                 </Div>
 
                 <div>
@@ -44,7 +44,7 @@
                 </div>
 
                 <button type="submit">Crear cuenta</button>
-                <p style="align-self: center;">¿Ya tienes cuenta? <a href="/views/auth/login.php">iniciar sesion</a></p>
+                <p style="align-self: center;">¿Ya tienes cuenta? <a href="./login.php">iniciar sesion</a></p>
             </form>
 
         </div>
@@ -59,10 +59,7 @@
             <div id="texto_login">
 
                 <p>Dahlia Beauté</p>
-                <p>
-                    "Belleza que se cuida, confianza que se nota"
-                </p>
-
+        
                 <p class="texto">Crea tu cuenta y reserva tu primer tratamiento en minutos</p>
                 
             </div>

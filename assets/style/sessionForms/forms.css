@@ -73,7 +73,7 @@ form input {
     padding: 0 18px;
     border: 1.5px solid rgba(134, 70, 156, 0.15);
     border-radius: 14px;
-    background-color: #faf8fb; /* Fondo ligeramente tintado muy suave */
+    background-color: #faf8fb; 
     color: var(--Azul-oscuro);
     font-size: 15px;
     font-family: 'Inter', sans-serif;
@@ -107,11 +107,28 @@ form a:hover {
     text-decoration: underline;
 }
 
-.texto{
-    color: var( --Rosa-magenta);
-    font-weight: 800px;
-    text-shadow: 0 1px 0px rgb(12, 12, 12);
+/* Títulos y textos descriptivos */
+.titulo_formulario{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--Azul-oscuro);
+    letter-spacing: -0.5px;
+    text-align: left;
 }
+
+.texto-instrucciones {
+    text-align: left;
+    margin-bottom: 3px;
+    font-size: 15px;
+    color: var(--Azul-oscuro);
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+
+
 
 h2 {
     margin-bottom: 32px;
