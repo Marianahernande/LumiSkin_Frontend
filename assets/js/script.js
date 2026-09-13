@@ -34,16 +34,33 @@ document.addEventListener("submit", function(e) {
         const boton = formulario.querySelector('.btn-enviar');
         
         if (boton && !boton.classList.contains('is-loading')) {
-            // 1. Detenemos el envío inmediato del formulario
+            // Detenemos el envío inmediato del formulario
             e.preventDefault();
             
-            // 2. Activamos la clase de carga para mostrar el spinner
+            // Activamos la clase de carga para mostrar el spinner
             boton.classList.add('is-loading');
             
-            // 3. Esperamos 600 milisegundos (lo justo para que se vea el giro) y enviamos el formulario
+            // Esperamos 600 milisegundos (lo justo para que se vea el giro) y enviamos el formulario
             setTimeout(function() {
                 formulario.submit();
             }, 600);
         }
+    }
+});
+// Slider de Fondo del Hero
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".hero-slide");
+    let currentSlide = 0;
+    const slideInterval = 5000; // 5 segundos
+
+    function nextSlide() {
+        if (slides.length === 0) return;
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
+    }
+
+    if (slides.length > 0) {
+        setInterval(nextSlide, slideInterval);
     }
 });
