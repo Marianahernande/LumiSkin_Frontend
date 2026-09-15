@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --pink-500: #ec4899;
+    --pink-600: #db2777;
+    --pink-100: #fce7f3;
+    --pink-50: #fdf2f8;
+    --slate-900: #0f172a;
+    --slate-800: #1e293b;
+    --slate-700: #334155;
+    --slate-500: #64748b;
+    --slate-400: #94a3b8;
+    --slate-200: #e2e8f0;
+    --slate-100: #f1f5f9;
+    --slate-50: #f8fafc;
+    --white: #fff;
+    --success: #059669;
+    --success-bg: #d1fae5;
+    --danger: #dc2626;
+    --danger-bg: #fee2e2;
+    --sidebar-w: 250px;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, .05);
+    --shadow-md: 0 4px 16px rgba(15, 23, 42, .07);
+    --transition: 180ms ease
+}
+
+html {
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--slate-50);
+    color: var(--slate-800);
+    min-height: 100vh;
+    line-height: 1.5
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: var(--white);
+    box-shadow: var(--shadow-md)
+}
+
+.sidebar {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    background: var(--slate-50);
+    border-right: 1px solid var(--slate-200);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    position: sticky;
+    top: 0;
+    height: 100vh
+}
+
+.sidebar__brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: 0 .5rem 1.75rem
+}
+
+.sidebar__logo {
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, var(--pink-500), var(--pink-600));
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: .9rem
+}
+
+.sidebar__brand-name {
+    font-weight: 600;
+    font-size: .95rem;
+    color: var(--slate-800)
+}
+
+.sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    flex: 1
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding: .65rem .9rem;
+    border-radius: 10px;
+    color: var(--slate-500);
+    font-size: .9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition)
+}
+
+.nav-link:hover {
+    background: var(--pink-50);
+    color: var(--pink-500)
+}
+
+.nav-link--active {
+    background: var(--pink-100);
+    color: var(--pink-600);
+    font-weight: 600
+}
+
+.nav-link__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--pink-500);
+    flex-shrink: 0
+}
+
+.sidebar__footer {
+    padding-top: 1rem;
+    border-top: 1px solid var(--slate-200);
+    margin-top: auto
+}
+
+.sidebar__logout {
+    display: block;
+    padding: .65rem .9rem;
+    color: var(--slate-400);
+    font-size: .85rem;
+    text-decoration: none;
+    border-radius: 8px
+}
+
+.sidebar__logout:hover {
+    color: var(--danger);
+    background: var(--danger-bg)
+}
+
+.main {
+    flex: 1;
+    padding: 1.75rem 2rem;
+    overflow-y: auto;
+    background: var(--white)
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem
+}
+
+.page-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--slate-900);
+    letter-spacing: -.02em
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    padding: .55rem 1.1rem;
+    border-radius: var(--radius-sm);
+    font-size: .85rem;
+    font-weight: 600;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    transition: background var(--transition), border-color var(--transition), color var(--transition);
+    white-space: nowrap;
+    line-height: 1.3
+}
+
+.btn--primary {
+    background: var(--pink-500);
+    color: #fff
+}
+
+.btn--primary:hover {
+    background: var(--pink-600)
+}
+
+.btn--outline {
+    background: transparent;
+    border: 1.5px solid var(--slate-200);
+    color: var(--slate-700)
+}
+
+.btn--outline:hover {
+    border-color: var(--pink-500);
+    color: var(--pink-500)
+}
+
+.btn--danger-outline {
+    background: transparent;
+    border: 1.5px solid #fca5a5;
+    color: var(--danger)
+}
+
+.btn--danger-outline:hover {
+    background: var(--danger-bg)
+}
+
+.btn--sm {
+    padding: .35rem .75rem;
+    font-size: .78rem
+}
+
+.btn-group {
+    display: flex;
+    gap: .4rem;
+    flex-wrap: wrap
+}
+
+.table-card {
+    background: var(--white);
+    border: 1px solid var(--slate-200);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm)
+}
+
+.table-scroll {
+    overflow-x: auto
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+thead th {
+    text-align: left;
+    padding: .75rem 1rem;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--slate-400);
+    background: var(--slate-50);
+    border-bottom: 1px solid var(--slate-200);
+    white-space: nowrap
+}
+
+tbody td {
+    padding: .9rem 1rem;
+    font-size: .875rem;
+    color: var(--slate-700);
+    border-bottom: 1px solid var(--slate-100);
+    vertical-align: middle
+}
+
+tbody tr:last-child td {
+    border-bottom: none
+}
+
+tbody tr:hover {
+    background: var(--slate-50)
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .7rem;
+    border-radius: var(--radius-full);
+    font-size: .75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1.3
+}
+
+.badge--success {
+    background: var(--success-bg);
+    color: var(--success)
+}
+
+@media(max-width:900px) {
+    .app {
+        flex-direction: column
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid var(--slate-200);
+        padding: 1rem
+    }
+
+    .sidebar__nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: .35rem
+    }
+
+    .main {
+        padding: 1.25rem 1rem
+    }
+}

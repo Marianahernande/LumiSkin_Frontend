@@ -1,3 +1,15 @@
+<?php
+/**
+ * Mi perfil — Dahlia Admin
+ * Estilos: css/perfil.css
+ */
+
+$nombre = 'María Torres';
+$email  = 'maria.torres@dahliabeaute.com';
+$rol    = 'Administrador';
+
+$pagina_activa = 'perfil';
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,24 +19,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../../assets/style/admin/perfil.css">
 </head>
 <body>
   <div class="app">
+
     <aside class="sidebar">
       <div class="sidebar__brand">
         <div class="sidebar__logo">D</div>
         <span class="sidebar__brand-name">Dahlia · Admin</span>
       </div>
+
       <nav class="sidebar__nav">
-        <a href="dashboard.html" class="nav-link">Dashboard</a>
-        <a href="reservas.html" class="nav-link">Gestionar reservas</a>
-        <a href="servicios.html" class="nav-link">Servicios</a>
-        <a href="auditoria.html" class="nav-link">Auditoría</a>
-        <a href="perfil.html" class="nav-link nav-link--active">
-          <span class="nav-link__dot"></span> Mi perfil
+        <a href="dashboard.php" class="nav-link">Dashboard</a>
+        <a href="reservas.php" class="nav-link">Gestionar reservas</a>
+        <a href="servicios.php" class="nav-link">Servicios</a>
+        <a href="auditoria.php" class="nav-link">Auditoría</a>
+        <a href="perfil.php" class="nav-link <?= $pagina_activa === 'perfil' ? 'nav-link--active' : '' ?>">
+          <?php if ($pagina_activa === 'perfil'): ?><span class="nav-link__dot"></span><?php endif; ?>
+          Mi perfil
         </a>
       </nav>
+
       <div class="sidebar__footer">
         <a href="#" class="sidebar__logout">Cerrar sesión</a>
       </div>
@@ -35,19 +51,25 @@
         <h1 class="page-title">Mi perfil</h1>
       </header>
 
-      <form class="form-card">
+      <form class="form-card" method="post" action="">
         <div class="form-group">
           <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" class="form-control" value="">
+          <input type="text" id="nombre" name="nombre" class="form-control"
+                 value="<?= htmlspecialchars($nombre) ?>">
         </div>
+
         <div class="form-group">
           <label for="email">Correo electrónico</label>
-          <input type="email" id="email" class="form-control" value="">
+          <input type="email" id="email" name="email" class="form-control"
+                 value="<?= htmlspecialchars($email) ?>">
         </div>
+
         <div class="form-group">
           <label for="rol">Rol</label>
-          <input type="text" id="rol" class="form-control" value="Administrador" readonly>
+          <input type="text" id="rol" name="rol" class="form-control"
+                 value="<?= htmlspecialchars($rol) ?>" readonly>
         </div>
+
         <button type="submit" class="btn btn--primary">Guardar cambios</button>
       </form>
 
@@ -63,12 +85,7 @@
             <p class="btn-state__label">Hover (simulado)</p>
           </div>
           <div class="btn-state">
-            <button type="button" class="btn btn--primary btn--loading" disabled>
-              <svg class="spinner" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-              </svg>
-              Cargando
-            </button>
+            <button type="button" class="btn btn--primary btn--loading" disabled>Cargando</button>
             <p class="btn-state__label">Cargando</p>
           </div>
           <div class="btn-state">
@@ -78,6 +95,7 @@
         </div>
       </section>
     </main>
+
   </div>
 </body>
 </html>
