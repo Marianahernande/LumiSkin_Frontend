@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil | Dahlia Beauté</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/style/cliente/estilos_cliente.css">
+    <link rel="stylesheet" href="../../assets/style/cliente/estilos_perfil.css">
+</head>
+<body>
+    <header>
+        <div class="logo-wrap">
+            <div class="circulo">
+                <img src="../../assets/img/logo.png" alt="Dahlia Beauté">
+            </div>
+            <p class="marca">Dahlia Beauté</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../cliente/reservarCita.php" data-nav="reservar">Reservar cita</a></li>
+                <li><a href="../cliente/misReservas.php" data-nav="reservas">Mis reservas</a></li>
+                <li><a href="../cliente/miPerfil.php" data-nav="perfil">Mi perfil</a></li>
+            </ul>
+        </nav>
+        <div class="sesion-info">
+            <span id="saludo-cliente">Hola, Cliente</span>
+            <button id="btn-cerrar-sesion" class="header-btn1" type="button">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-cliente contenedor-perfil">
+            <h2 class="titulo-seccion">Mi perfil</h2>
+
+            <form id="form-perfil" class="tarjeta-perfil">
+                <div class="campo-perfil">
+                    <label for="campo-nombre">Nombre completo</label>
+                    <input type="text" id="campo-nombre" required>
+                </div>
+
+                <div class="campo-perfil">
+                    <label for="campo-correo">Correo electrónico</label>
+                    <input type="email" id="campo-correo" required>
+                </div>
+
+                <div class="campo-perfil">
+                    <label for="campo-rol">Rol</label>
+                    <input type="text" id="campo-rol" disabled>
+                </div>
+
+                <p class="mensaje-guardado oculto" id="mensaje-guardado">✓ Cambios guardados</p>
+
+                <button type="submit" class="btn-primario">Guardar cambios</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../cliente/cliente-comun.js"></script>
+    <script src="../cliente/miPerfil.js"></script>
+</body>
+</html>

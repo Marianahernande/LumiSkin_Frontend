@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../assets/style/partes/headerPrincipal.css">
     <link rel="stylesheet" href="../../assets/style/partes/botones.css">
     <link rel="stylesheet" href="../../assets/style/sessionForms/estilos_recuperar.css">
+    <link rel="stylesheet" href="../../assets/style/media.css">
+    
 
 </head>
 <body>
@@ -46,5 +48,7 @@
     </div>
 
 </main>
+
+<script src="../../assets/js/script.js"></script>
 </body>
 </html>

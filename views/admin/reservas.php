@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Gestionar reservas — Dahlia Admin
+ * Estilos: css/reservas.css
+ */
 
 $reservas = [
     ['cliente' => 'Valentina Ríos',  'servicio' => 'Limpieza Facial Profunda',  'fecha' => '10 ago 2026 · 09:00–10:00', 'estado' => 'pendiente'],

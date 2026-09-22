@@ -399,3 +399,93 @@
         height: 16px;
     }
 }
+/*Adaptacion formularios iniciar sesion*/
+
+/* --- Laptops Pequeñas / Tablets Horizontales (<= 900px) --- */
+@media (max-width: 900px) {
+    main {
+        height: auto;
+        min-height: calc(100vh - 75px);
+        overflow-y: auto;
+    }
+
+    #main_container {
+        flex-direction: column-reverse;
+        height: auto;
+        min-height: 100%;
+    }
+
+    #contenedor_login {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    #contenedor_info {
+        width: 100%;
+        padding: 40px 20px;
+        min-height: 300px;
+    }
+
+    #circulo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .titulo_formulario {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .texto-instrucciones {
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* --- Tablets y Dispositivos Móviles (<= 768px) --- */
+@media (max-width: 768px) {
+    #main_container:has(#contenedor_login:only-child) {
+        padding: 40px 15px;
+    }
+
+    #main_container:has(#contenedor_login:only-child) #contenedor_login {
+        padding: 30px 20px;
+        border-radius: 18px;
+    }
+}
+
+/* --- Teléfonos Pequeños (<= 480px) --- */
+@media (max-width: 480px) {
+    .titulo_formulario,
+    .titulo-recuperar {
+        font-size: 1.8rem;
+    }
+
+    #texto_login p:nth-child(1) {
+        font-size: 1.8rem;
+    }
+
+    #texto_login p:nth-child(2) {
+        font-size: 0.95rem;
+    }
+
+    #circulo {
+        width: 70px;
+        height: 70px;
+    }
+
+    #circulo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    form input {
+        height: 48px;
+        font-size: 14px;
+    }
+}

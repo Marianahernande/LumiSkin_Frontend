@@ -1,0 +1,429 @@
+.titulo-paso {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--Azul-oscuro);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ===== Stepper ===== */
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 45px;
+}
+
+.paso-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.paso-circulo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blanco);
+    border: 2px solid var(--borde-sutil);
+    color: #a99bb5;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.paso-label {
+    font-size: 13px;
+    color: #a99bb5;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.paso-item.completado .paso-circulo {
+    background: var(--Rosa-magenta);
+    border-color: var(--Rosa-magenta);
+    color: #fff;
+}
+
+.paso-item.completado .paso-label {
+    color: var(--Azul-oscuro);
+}
+
+.paso-linea {
+    width: 70px;
+    height: 2px;
+    background: var(--borde-sutil);
+    margin-bottom: 24px;
+    transition: background 0.3s ease;
+}
+
+.paso-linea.completado {
+    background: var(--Rosa-magenta);
+}
+
+/* ===== Paneles ===== */
+.paso-panel {
+    background: var(--blanco);
+    border-radius: 24px;
+    padding: 45px;
+    box-shadow: 0 10px 40px rgba(40, 37, 90, 0.08);
+}
+
+.paso-panel.oculto {
+    display: none;
+}
+
+.acciones-paso {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.acciones-centradas {
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ===== Paso 1: Servicios ===== */
+.categoria-servicios {
+    margin-bottom: 30px;
+}
+
+.titulo-categoria {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--Med-purpura);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.grid-servicios-reserva {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-servicio-op {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    border: 2px solid var(--borde-sutil);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background: var(--blanco);
+}
+
+.tarjeta-servicio-op:hover {
+    border-color: var(--Rosa-magenta);
+}
+
+.tarjeta-servicio-op.seleccionada {
+    border-color: var(--Rosa-magenta);
+    background: rgba(255, 205, 234, 0.25);
+}
+
+.tarjeta-servicio-op .info-servicio-op h4 {
+    font-size: 16px;
+    color: var(--Azul-oscuro);
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.tarjeta-servicio-op .info-servicio-op p {
+    font-size: 13px;
+    color: #888;
+}
+
+.radio-servicio {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #c9b8d3;
+    flex-shrink: 0;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.tarjeta-servicio-op.seleccionada .radio-servicio {
+    border-color: var(--Rosa-magenta);
+}
+
+.tarjeta-servicio-op.seleccionada .radio-servicio::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: var(--Rosa-magenta);
+}
+
+/* ===== Paso 2: Fecha y hora ===== */
+.subtitulo-paso {
+    text-align: center;
+    color: #888;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.aviso-reprogramar {
+    background: rgba(193, 136, 207, 0.15);
+    border: 1px solid var(--Lila);
+    color: var(--Med-purpura);
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.aviso-reprogramar.oculto {
+    display: none;
+}
+
+.tira-dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.dia-opcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 6px;
+    border-radius: 14px;
+    border: 2px solid var(--borde-sutil);
+    background: var(--blanco);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dia-opcion .nombre-dia {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    color: #a08fae;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.dia-opcion .numero-dia {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Azul-oscuro);
+}
+
+.dia-opcion:hover {
+    border-color: var(--Lila);
+}
+
+.dia-opcion.seleccionado {
+    background: var(--Rosa-magenta);
+    border-color: var(--Rosa-magenta);
+}
+
+.dia-opcion.seleccionado .nombre-dia,
+.dia-opcion.seleccionado .numero-dia {
+    color: #fff;
+}
+
+.rejilla-horas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.hora-opcion {
+    padding: 13px 8px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid var(--borde-sutil);
+    background: var(--blanco);
+    color: var(--Azul-oscuro);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hora-opcion:hover {
+    border-color: var(--Lila);
+}
+
+.hora-opcion.seleccionada {
+    background: var(--Rosa-magenta);
+    border-color: var(--Rosa-magenta);
+    color: #fff;
+}
+
+.hora-opcion.bloqueada {
+    background: #f4f0f5;
+    border-color: #f4f0f5;
+    color: #c3b9c9;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+.leyenda-horas {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.leyenda-horas span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.punto-disponible {
+    background: var(--verde-confirmada);
+}
+
+.punto-bloqueado {
+    background: var(--rojo-cancelada);
+}
+
+/* ===== Paso 3: Confirmación ===== */
+.tarjeta-resumen {
+    background: var(--background);
+    border-radius: 18px;
+    padding: 30px 35px;
+    margin-bottom: 10px;
+}
+
+.fila-resumen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--borde-sutil);
+    font-size: 15px;
+}
+
+.fila-resumen span {
+    color: #888;
+}
+
+.fila-resumen strong {
+    color: var(--Azul-oscuro);
+}
+
+.fila-resumen:last-child {
+    border-bottom: none;
+}
+
+.fila-total {
+    padding-top: 20px;
+}
+
+.fila-total span {
+    font-weight: 700;
+    color: var(--Azul-oscuro);
+    font-size: 17px;
+}
+
+.fila-total strong {
+    font-size: 22px;
+    color: var(--Rosa-magenta);
+}
+
+/* ===== Confirmación final ===== */
+.panel-completado {
+    text-align: center;
+    padding: 70px 45px;
+}
+
+.icono-exito {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: rgba(43, 168, 74, 0.12);
+    color: var(--verde-confirmada);
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-completado {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--Azul-oscuro);
+    margin-bottom: 16px;
+}
+
+.texto-completado {
+    color: #888;
+    max-width: 460px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.panel-completado .acciones-paso {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .paso-panel {
+        padding: 28px 20px;
+    }
+
+    .grid-servicios-reserva {
+        grid-template-columns: 1fr;
+    }
+
+    .tira-dias {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .rejilla-horas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .paso-label {
+        display: none;
+    }
+
+    .paso-linea {
+        width: 30px;
+    }
+
+    .acciones-paso {
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+
+    .acciones-paso span {
+        display: none;
+    }
+
+    .btn-primario,
+    .btn-secundario {
+        width: 100%;
+    }
+}

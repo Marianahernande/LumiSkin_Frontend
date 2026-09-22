@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar cita | Dahlia Beauté</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/style/cliente/estilos_cliente.css">
+    <link rel="stylesheet" href="../../assets/style/cliente/estilos_reservar.css">
+</head>
+<body>
+    <header>
+        <div class="logo-wrap">
+            <div class="circulo">
+                <img src="../../assets/img/logo.png" alt="Dahlia Beauté">
+            </div>
+            <p class="marca">ahlia Beauté</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../cliente/reservarCita.php" data-nav="reservar">Reservar cita</a></li>
+                <li><a href="../cliente/misReservas.php" data-nav="reservas">Mis reservas</a></li>
+                <li><a href="../cliente/miPerfil.php" data-nav="perfil">Mi perfil</a></li>
+            </ul>
+        </nav>
+        <div class="sesion-info">
+            <span id="saludo-cliente">Hola, Cliente</span>
+            <button id="btn-cerrar-sesion" class="header-btn1" type="button">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-cliente">
+
+            <div class="stepper" id="stepper">
+                <div class="paso-item" data-paso="1">
+                    <div class="paso-circulo">1</div>
+                    <span class="paso-label">Servicio</span>
+                </div>
+                <div class="paso-linea" data-linea="1"></div>
+                <div class="paso-item" data-paso="2">
+                    <div class="paso-circulo">2</div>
+                    <span class="paso-label">Fecha y hora</span>
+                </div>
+                <div class="paso-linea" data-linea="2"></div>
+                <div class="paso-item" data-paso="3">
+                    <div class="paso-circulo">3</div>
+                    <span class="paso-label">Confirmar</span>
+                </div>
+            </div>
+
+            <!-- Paso 1: Servicio -->
+            <section class="paso-panel" id="panel-servicio">
+                <h2 class="titulo-paso">Selecciona un servicio</h2>
+                <div id="lista-servicios"></div>
+                <div class="acciones-paso">
+                    <span></span>
+                    <button class="btn-primario" id="btn-a-fecha" disabled>Continuar →</button>
+                </div>
+            </section>
+
+            <!-- Paso 2: Fecha y hora -->
+            <section class="paso-panel oculto" id="panel-fecha">
+                <h2 class="titulo-paso">Selecciona fecha y horario</h2>
+                <p class="subtitulo-paso" id="resumen-servicio-fecha"></p>
+                <div class="aviso-reprogramar oculto" id="aviso-reprogramar"></div>
+
+                <div class="tira-dias" id="tira-dias"></div>
+                <div class="rejilla-horas" id="rejilla-horas"></div>
+
+                <div class="leyenda-horas">
+                    <span><i class="punto punto-disponible"></i> Disponible</span>
+                    <span><i class="punto punto-bloqueado"></i> Bloqueado</span>
+                </div>
+
+                <div class="acciones-paso">
+                    <button class="btn-secundario" id="btn-fecha-atras">← Atrás</button>
+                    <button class="btn-primario" id="btn-a-confirmar" disabled>Continuar →</button>
+                </div>
+            </section>
+
+            <!-- Paso 3: Confirmar -->
+            <section class="paso-panel oculto" id="panel-confirmar">
+                <h2 class="titulo-paso">Confirma tu reserva</h2>
+
+                <div class="tarjeta-resumen">
+                    <div class="fila-resumen"><span>Servicio</span><strong id="resumen-servicio"></strong></div>
+                    <div class="fila-resumen"><span>Fecha</span><strong id="resumen-fecha"></strong></div>
+                    <div class="fila-resumen"><span>Hora</span><strong id="resumen-hora"></strong></div>
+                    <div class="fila-resumen"><span>Duración</span><strong id="resumen-duracion"></strong></div>
+                    <div class="fila-resumen fila-total"><span>Total</span><strong id="resumen-total"></strong></div>
+                </div>
+
+                <div class="acciones-paso">
+                    <button class="btn-secundario" id="btn-confirmar-atras">Atrás</button>
+                    <button class="btn-primario" id="btn-confirmar-reserva">Confirmar reserva</button>
+                </div>
+            </section>
+
+            <!-- Confirmación -->
+            <section class="paso-panel oculto panel-completado" id="panel-completado">
+                <div class="icono-exito">✓</div>
+                <h2 class="titulo-completado">¡Tu cita está confirmada!</h2>
+                <p class="texto-completado" id="texto-completado"></p>
+                <div class="acciones-paso acciones-centradas">
+                    <a href="../cliente/misReservas.php" class="btn-primario">Ver mis reservas</a>
+                    <button class="btn-secundario" id="btn-reservar-otra">Reservar otra cita</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="../cliente/cliente-comun.js"></script>
+    <script src="../cliente/reservarCita.js"></script>
+</body>
+</html>

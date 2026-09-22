@@ -1,4 +1,8 @@
 <?php
+/**
+ * Dashboard — Dahlia Admin
+ * Estilos: css/dashboard.css
+ */
 
 // Datos (después se reemplazan por consultas a la BD)
 $reservas_hoy = 8;

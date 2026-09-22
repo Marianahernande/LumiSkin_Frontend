@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../assets/style/partes/botones.css">
     <link rel="stylesheet" href="../../assets/style/sessionForms/forms.css">
     <link rel="stylesheet" href="../../assets/style/sessionForms/lateral.css">
+    <link rel="stylesheet" href="../../assets/style/media.css">
 </head>
 <body>
     <?php include '../partes/headerPrincipal.php'; ?>
@@ -64,5 +65,6 @@
     </div>
 
 </main>
+<script src="../../assets/js/script.js"></script>
 </body>
 </html>

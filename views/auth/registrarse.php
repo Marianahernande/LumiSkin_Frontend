@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="../../assets/style/sessionForms/lateral.css">
 <link rel="stylesheet" href="../../assets/style/sessionForms/forms.css">
 <link rel="stylesheet" href="../../assets/style/partes/botones.css">
+<link rel="stylesheet" href="../../assets/style/media.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -73,6 +74,6 @@
 
 </main>
 
-
+<script src="../../assets/js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Gestión de servicios — Dahlia Admin
+ * Estilos: css/servicios.css
+ */
 
 $servicios = [
     ['nombre' => 'Limpieza Facial Profunda',  'duracion' => '60 min', 'precio' => 'S/ 45', 'activo' => true],

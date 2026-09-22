@@ -1,4 +1,8 @@
 <?php
+/**
+ * Auditoría — Dahlia Admin
+ * Estilos: css/auditoria.css
+ */
 
 $logs = [
     ['usuario' => 'Admin María Torres', 'accion' => 'Cambió estado de reserva #101', 'detalle' => 'Pendiente → En proceso',             'fecha' => '10 ago 2026, 09:14'],
