@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis reservas | Dahlia Beauté</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/cliente/styles/estilos_cliente.css">
+    <link rel="stylesheet" href="/cliente/styles/estilos_misReservas.css">
+</head>
+<body>
+    <header>
+        <div class="logo-wrap">
+            <div class="circulo">
+                <img src="/img/logo.png" alt="Dahlia Beauté">
+            </div>
+            <p class="marca">Dahlia Beauté</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/cliente/reservarCita.html" data-nav="reservar">Reservar cita</a></li>
+                <li><a href="/cliente/misReservas.html" data-nav="reservas">Mis reservas</a></li>
+                <li><a href="/cliente/miPerfil.html" data-nav="perfil">Mi perfil</a></li>
+            </ul>
+        </nav>
+        <div class="sesion-info">
+            <span id="saludo-cliente">Hola, Cliente</span>
+            <button id="btn-cerrar-sesion" class="header-btn1" type="button">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-cliente">
+            <div class="cabecera-reservas">
+                <h2 class="titulo-seccion">Mis reservas</h2>
+                <a href="/cliente/reservarCita.html" class="btn-primario">+ Nueva reserva</a>
+            </div>
+
+            <div id="lista-reservas"></div>
+
+            <div class="estado-vacio oculto" id="estado-vacio">
+                <p>Todavía no tienes reservas.</p>
+                <a href="/cliente/reservarCita.html" class="btn-primario">Reserva tu primera cita</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="/cliente/cliente-comun.js"></script>
+    <script src="/cliente/misReservas.js"></script>
+</body>
+</html>

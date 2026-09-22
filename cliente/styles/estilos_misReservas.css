@@ -1,0 +1,106 @@
+.cabecera-reservas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.titulo-seccion {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--Azul-oscuro);
+}
+
+#lista-reservas {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.tarjeta-reserva {
+    background: var(--blanco);
+    border-radius: 18px;
+    padding: 26px 30px;
+    box-shadow: 0 8px 25px rgba(40, 37, 90, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-left: 4px solid var(--borde-sutil);
+    transition: all 0.25s ease;
+}
+
+.tarjeta-reserva.estado-pendiente {
+    border-left-color: var(--amarillo-pendiente);
+}
+
+.tarjeta-reserva.estado-confirmada {
+    border-left-color: var(--verde-confirmada);
+}
+
+.tarjeta-reserva.estado-cancelada {
+    border-left-color: var(--rojo-cancelada);
+    opacity: 0.7;
+}
+
+.info-reserva h3 {
+    font-size: 1.15rem;
+    color: var(--Azul-oscuro);
+    margin-bottom: 6px;
+    font-family: 'Playfair Display', serif;
+}
+
+.info-reserva p {
+    font-size: 14px;
+    color: #888;
+}
+
+.estado-acciones {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.botones-reserva {
+    display: flex;
+    gap: 10px;
+}
+
+.estado-vacio {
+    text-align: center;
+    background: var(--blanco);
+    border-radius: 20px;
+    padding: 60px 30px;
+    box-shadow: 0 8px 25px rgba(40, 37, 90, 0.06);
+}
+
+.estado-vacio p {
+    color: #888;
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+
+.estado-vacio.oculto {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .tarjeta-reserva {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .estado-acciones {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cabecera-reservas {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
